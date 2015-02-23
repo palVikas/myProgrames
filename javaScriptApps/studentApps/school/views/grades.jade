@@ -1,0 +1,11 @@
+html
+ head
+  title grades
+  link(rel='stylesheet', href='/stylesheets/style.css')
+ body
+  h1 School Grades
+  p
+   ul
+    each item in grades
+     li
+      a(href="/grades/#{item.id}") #{item.name}

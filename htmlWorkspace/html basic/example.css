@@ -1,0 +1,20 @@
+ vbody{
+		background:gray;
+}
+
+h1	{
+	background:skyblue;
+	text-align: center;
+}
+.vikas{
+	text-align:center;
+	background-color:yellow;
+    font-size:20px;
+   	border:2px black solid;
+}
+.argv{
+   	/*border:4px black solid;*/
+   	height:250px;
+   	width: 1050px
+
+}

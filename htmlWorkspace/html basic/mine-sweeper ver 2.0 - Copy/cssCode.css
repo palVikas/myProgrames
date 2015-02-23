@@ -1,0 +1,20 @@
+.header{
+    background-color:black;
+    color:yellow;
+    text-align:center;
+    padding:6px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.cell{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+}
+
+body{
+	text-align: center;
+	/*background-color: pink;*/
+	margin: 100px;
+}

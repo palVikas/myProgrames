@@ -1,0 +1,10 @@
+var tester= require('./simple.js').test;
+var anda =require('./simple.js').alu;
+var square=tester.result(2);
+console.log(square);
+var sum= tester.add(1,2);
+console.log(sum);
+var minus= tester.sub(8,5); 
+console.log(minus);
+var bhaag=tester.divid(15,5);
+console.log(bhaag);

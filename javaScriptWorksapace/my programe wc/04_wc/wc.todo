@@ -1,0 +1,210 @@
+
+*********************************************************************************************************************
+                                     Acceptance Test
+
+**insert the one.txt file from wc folder
+one.txt =  hello, this is a good day.
+          What do you think? 
+
+vikas.txt = Hii how are you?
+            i am fine ,thankyou.
+			Where are you?
+ 
+
+**check in the file:-
+a) fileName -c (--byte,--char) ==> show the number of charecter in the file.
+
+b) fileName -l(--lines) ==> show the number of line in the file.
+
+c)fileName -L(--max-line-length) ==> show the length of the longest line in file.
+d) fileName -w(--words)  ==> show the total words in the file.
+
+
+test1:- if there are no files ,then it count number of line ,total number of words and total number of bytes in the file line by line... 
+ex.    node  wc.js
+	     vikas
+	     pal
+	     press clrt+d
+	       2      2       10   
+
+test2:- if there are no files and user dont write anything,then it count number of line ,total number of words and total number of bytes in the file are 0... 
+ex.    node  wc.js
+	     press clrt+d
+	       0      0       0   
+
+
+test3:- if there are no files and we use -l command than it count the number of line in the file line by line... 
+ex.    node  wc.js -l
+	     vikas
+	     pal
+	         2 lines
+
+test4:- if there are no files and we dont use any line and use -l command than number of line should be 0 ... 
+ex.    node  wc.js -l
+	     press clrt+d
+	         0 lines
+
+test5:- if there are no files and we use -c command than it count the number of bytes in the file line by line... 
+ex.    node  wc.js -c
+	    vikas
+	    pal
+	         10 bytes
+
+test6:- if there are no files and we dont write any word and use -c command than  number of bytes should be 0 
+ex.    node  wc.js -c
+	    press clrt+d
+	         0 bytes
+
+test7:- if there are no files and we use -w command than it count the number of words in the file line by line... 
+ex.    node  wc.js -w
+	     vikas
+	     pal
+	         2 words
+
+test8:- if there is one text file and we use fileName -l command then it should count the number of line on that file 
+
+ex. node wc.js one.txt -l
+       2  one.txt;
+
+
+test9:- if there is one text file and we use fileName -c command then it should count the numbner of bytes on that file 
+
+ex. node wc.js one.txt -c
+      48 one.txt;
+
+
+test10:- if there is one text file and we use fileName -L command then it count the max line length of on that file 
+
+ex. node wc.js one.txt -L
+      26 one.txt;
+
+
+ test11:- if there is one text file and we use fileName -w command then it count the total words on that file 
+
+ex. node wc.js one.txt -w
+      10 one.txt;
+
+
+test12:- if there is one text file and we use fileName ,then it count number of line ,total words in the file and total number of bytes in the file
+
+ex. node wc.js one.txt 
+      2     10    48 one.txt;
+
+
+test13:- if there are two  files and we use fileName ,then it count total number of line ,total words in the file and total number of bytes in the both files
+
+ex. node wc.js one.txt vikas.txt
+      2     10    48 one.txt;
+      3		11	  60 vikas.txt;
+      5		21	  108 total;
+
+
+
+
+
+***********************************************TODO***********************************************************
+
+*Get scaffold                                                [10 min]   
+ -->Dropbox,sublime text,run Test,bash,folder,simWcLib,simWcLibTest,wc.js
+ 
+
+  
+*  Get the text (from commanad line)                                           [45 min]                           
+  -->get the text in given formate
+  -->read the text
+  -->confirm that text is empty or not
+
+
+
+[done]*	find total number of lines(\n) on that data.      [ 40 min]
+  -->get the text
+  -->read the text
+  -->count the lines
+  
+[done]*find total number of words on that data.          [30 min]
+  -->get the text
+  -->read the text
+  -->find the words
+  -->count the words
+
+[done]*	find total number of space on that data.         [20 min]
+ -->get the text
+  -->read the text
+  -->find the space
+  -->count the space
+
+[done]*find total number of charecter on that data.     [30 min]
+
+  -->get the text
+  -->read the text
+  -->count the charecter
+
+[done]	find the length of the longest line.           [45 min]
+  -->get the text
+  -->read the text
+  -->find the maximum line length
+  -->count that line length
+
+[done]*find total bytes adding lines charecters,spaces. [15 min]
+--->  expected default result
+     [lines,words,bytes] 
+
+--> when user has special requirement option[-l,-w,-c,-L]    [3 hour]
+[done]  (-l(--lines),print the new line count)
+   ->read option
+   ->count the lines
+   ->show the lines count 
+[done] (-w,print the words count)
+   ->read option
+   ->count the words
+   ->show the words count 
+[done]  (-c,print the byte count)
+   ->read option
+   ->count the bytes
+   ->show the bytes count 
+
+[done] (-L,print the length of the longest line)
+   ->read option
+   ->show the max line length.
+
+*help display the help and exit
+   ->display help by using text massage.
+
+* Get the filename .                                      [25 min]
+ ->check validation of file
+ ->read file in text
+
+ * integrate the part                                      [30 min]
+ -->perform the task to read user input.
+ -->perform the task for count lines.
+ -->perform the task for count words.
+ -->perform the task for count bytes.
+ -->combined lines,words,bytes and display the result.
+ -->perform the task when user gives -l it gives only count of number of lines
+ -->perform the task when user gives -w it gives only count of number of words
+ -->perform the task when user gives -c it gives only count of number of bytes
+ -->perform the task when user gives -L it gives only max length of line
+
+
+
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

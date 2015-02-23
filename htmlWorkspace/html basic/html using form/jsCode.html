@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>JsCode</title>
+</head>
+<body id ="queryString">
+	<script type ="text/javascript">
+	var queryText = window.location.search;
+	var parameter = queryText.split("&");
+	var color = parameter[0].split('=')[1];
+	alert(color)
+	var firstName = parameter[1].split('=')[1].split("+").join(' ');
+	document.getElementById("queryString").style.background = color;
+	document.getElementById("queryString").innerHTML = firstName.toUpperCase();
+	</script>
+	<p align="center"><b>WELCOME TO HTML COLOR WORLD</b></p>
+</body>
+</html>

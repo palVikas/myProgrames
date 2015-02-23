@@ -1,0 +1,42 @@
+1) Get scafford code ready............
+ * module,sublime text,run Test,bash,folder,test,main
+2) in low level module 
+	*check for fizz - isFizz(fizz,count);
+	*check for buzz - isBuzz(buzz,count);
+	*check for FizzBuzz - isFizzBuzz(fizz,buzz,count);
+	*check for correctNumber - isCorrectNumber(number,count);
+	* check for correct ans(userInput)
+	* check for invalid input(userInput)
+	* display output on win or looss!(win);
+
+3)count Module:
+	* createCount
+	* getCount()
+	* next()
+4)in high level Module
+	*create fizzbuzz -return fizzbuzz object 
+		* object has method start;
+			*start will set onLine event
+		* object has Fizz filed 
+		* object has Buzz filed;
+		* setter for fizz and buzz
+		
+
+5) online -
+		here  we call all check method
+
+
+
+5)user Interaction
+	* Prompts > 
+
+
+
+6)rules:-
+	* fizz buzz is two number must be between 1 to 9
+	* set the fizz buzz by computer
+	* user interaction
+	*input fizz and buzz number to 1
+	*input any number by user
+	*
+  
